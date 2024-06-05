@@ -1,0 +1,54 @@
+#About-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#About-Container img {
+    position: relative;
+    left: 100px;
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    border-radius: 15px;
+    height: 350px;
+    width: 350px;
+    box-shadow: 30px 30px 10px 5px#002244;
+
+}
+
+#About-Container h2 {
+    position: relative;
+    font-size: 60px;
+    color: #002244;
+    top: 20px;
+
+}
+
+#About-Container p {
+    font-size: 20px;
+    color: darkgrey;
+    padding-bottom: 30px;
+}
+
+#About-Container button {
+    padding: 15px;
+    width: 140px;
+    color: #002244;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+#About-Container button:hover {
+    background-color: #002244;
+    color: white;
+    box-shadow: 10px 5px 10px #002244;
+}
+
+#svg svg {
+position: relative;
+top: 20px;
+left: 150px;
+margin-left: 20px;
+}

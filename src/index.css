@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/09/18/01/black-932213_1280.jpg");
+    background-size: cover;
+    /* Ensure the background image covers the entire background */
+    background-position: center;
+    /* Center the background image */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* Use 100vw to make the body take the full width of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#app-Container {
+    width: 1200px;
+    /* Set the desired width for the container */
+    height: 90vh;
+    /* Adjust height as needed, or set a specific height */
+    background-color: white;
+    padding: 20px;
+    /* Optional: add padding to the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: add a shadow for visual effect */
+    border-radius: 8px;
+    /* Optional: add rounded corners for visual effect */
+    overflow: auto;
+}
+
+#background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+    padding: 15px 3F0px;
+}
+
+#resume  {
+    position: relative;
+    right: 20px;
+    width: 1250px;
+    padding: 20px;
+    background-color: #fcfcfc;;
+    border: 5px solid #eeeeee;;
+    overflow: hidden;
+}
+
+#resume h2 {
+    font-size: 50px;
+}
+
+.education {
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.Year-Graduate {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid #1D24CA;
+    font-weight: bold;
+}
+
+.course-Year {
+    padding-left: 10px;
+    color: gray;
+    font-size: 18px;
+}
+
+.course-Year ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.course-Year ul li {
+    margin-bottom: 20px;
+}
+
+/* Percentage Section */
+#percentage-Section {
+    position: relative;
+    left: 30px;
+    width: 50%;
+}
+
+#percentage-Title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.percentage-Element {
+    margin-top: 30px;
+}
+
+.percentage-Element h4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+.percentage-Element h4 span {
+padding-left: 265px;
+}
+
+.percentage-Border {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inside-Border {
+    display: block;
+    height: 100%;
+    background-color: #284b6e;
+}

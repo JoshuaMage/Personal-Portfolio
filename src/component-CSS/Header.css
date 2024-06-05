@@ -1,0 +1,73 @@
+#header-Container {
+    display: grid;
+    grid-template-columns: 50px 1.5fr 2fr;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+
+h1 {
+    position: relative;
+    left: 10px;
+    background-color: #002244;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#applicant-Name {
+    position: relative;
+    left: 20px;
+    font-weight: lighter;
+}
+
+#applicant-Name strong {
+    color: #002244;
+}
+
+#button-Container ul {
+    display: flex;
+    gap: 30px;
+}
+
+#button-Container li {
+    list-style-type: none;
+}
+
+.header-Button {
+    border: none;
+    background-color: transparent;
+    color: #002244;
+    font-family: serif;
+    font-size: 16px;
+}
+
+.header-Button:active,
+.header-Button:focus {
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #0070BB;
+}
+
+#header-Hireme {
+    position: relative;
+    bottom: 10px;
+    font-family: serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: white;
+    color: #002244;
+}
+
+#header-Hireme:hover {
+    background-color: #002244;
+    color: white;
+    box-shadow: 10px 5px 10px #002244;
+
+    font-weight: bold;
+}
