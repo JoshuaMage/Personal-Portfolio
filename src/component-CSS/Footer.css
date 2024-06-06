@@ -1,6 +1,19 @@
 #svg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: auto;
     background-color: #fcfcfc;
     border: 5px solid #eeeeee;
     padding: 20px 0px;
+}
+
+#svg p {
+    position: relative;
+    right: 120px;
+    text-align: end;
+
+}
+
+#svg svg {
+    padding: 0px 20px;
 }

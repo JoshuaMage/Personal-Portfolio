@@ -1,8 +1,8 @@
-import "../component-CSS/Footer.css"
+import "../component-CSS/Footer.css";
 export default function Footer() {
   return (
-    <div>
-      <section id="svg">
+    <div id="svg">
+      <section  >
         <a
           href="https://www.facebook.com/profile.php?id=100006962520513"
           rel="Facebook"
@@ -90,6 +90,7 @@ export default function Footer() {
           </svg>
         </a>
       </section>
+      <p>© 2024 All rights reserved.</p>
     </div>
   );
 }

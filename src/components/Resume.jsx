@@ -65,7 +65,7 @@ export default function Resume() {
           </h2>
           <div>
             <section className="education">
-              <p className="Year-Graduate">2024</p>
+              <p className="Year-Graduate">2024 - Current</p>
               <section className="school-Name">
                 <h2 className="school">Web Developer</h2>
                 <h3 className="course-Year">??????</h3>

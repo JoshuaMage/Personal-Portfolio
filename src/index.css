@@ -21,10 +21,7 @@ body {
 
 #background {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    overflow: hidden;
-    padding: 15px 30px;
+    grid-template-columns: 600px 600px;
 }
 
 #resume {
@@ -37,6 +34,10 @@ body {
     overflow: hidden;
 }
 
+.school-Name {
+padding: 0px 30px;
+}
+
 #resume h2 {
     position: relative;
     left: 50px;
@@ -46,7 +47,7 @@ body {
 }
 
 .education {
-    padding-left: 30px;
+    padding: 10px 20px;
     overflow: hidden;
 }
 
@@ -62,7 +63,7 @@ body {
 .course-Year {
     padding-left: 10px;
     color: gray;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .course-Year ul {
@@ -97,7 +98,7 @@ body {
 }
 
 .percentage-Element h4 span {
-    padding-left: 265px;
+    text-align: end;
 }
 
 .percentage-Border {
