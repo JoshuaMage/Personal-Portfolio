@@ -1,38 +1,21 @@
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url("https://cdn.pixabay.com/photo/2015/09/09/18/01/black-932213_1280.jpg");
-    background-size: cover;
-    /* Ensure the background image covers the entire background */
-    background-position: center;
-    /* Center the background image */
+    background-image: linear-gradient(86.3deg, rgba(0, 119, 182, 1) 3.6%, rgba(8, 24, 68, 1) 87.6%);
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    /* Use 100vw to make the body take the full width of the viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #app-Container {
+    display: grid;
     width: 1200px;
-    /* Set the desired width for the container */
-    height: 90vh;
-    /* Adjust height as needed, or set a specific height */
-    background-color: white;
-    padding: 20px;
-    /* Optional: add padding to the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: add a shadow for visual effect */
-    border-radius: 8px;
-    /* Optional: add rounded corners for visual effect */
+    min-height: 100vh;
+    background-color: #FAFAFA;
     overflow: auto;
 }
 
@@ -41,21 +24,25 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     overflow: hidden;
-    padding: 15px 3F0px;
+    padding: 15px 30px;
 }
 
-#resume  {
+#resume {
     position: relative;
     right: 20px;
     width: 1250px;
     padding: 20px;
-    background-color: #fcfcfc;;
-    border: 5px solid #eeeeee;;
+    background-color: #fcfcfc;
+    border: 5px solid #eeeeee;
     overflow: hidden;
 }
 
 #resume h2 {
-    font-size: 50px;
+    position: relative;
+    left: 50px;
+    font-size: 70px;
+    font-family: sans-serif;
+
 }
 
 .education {
@@ -110,7 +97,7 @@ body {
 }
 
 .percentage-Element h4 span {
-padding-left: 265px;
+    padding-left: 265px;
 }
 
 .percentage-Border {
