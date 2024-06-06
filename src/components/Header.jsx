@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Aboutme from "./Aboutme.jsx";
 import Resume from "./Resume.jsx";
+import Portfolio from "./Portfolio.jsx";
 import "../component-CSS/Header.css";
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
 
   const showResume = () => {
     setCurrentSelection("resume");
+  };
+
+  const showPortfolio = () => {
+    setCurrentSelection("portfolio");
   };
 
   return (
@@ -40,7 +45,9 @@ function App() {
               </button>
             </li>
             <li>
-              <button className="header-Button">Portfolio</button>
+              <button className="header-Button" onClick={() => showPortfolio()}>
+                Portfolio
+              </button>
             </li>
             <li>
               <button className="header-Button">blog</button>
@@ -56,6 +63,7 @@ function App() {
       </div>
       {currentSelection === "about" && <Aboutme />}
       {currentSelection === "resume" && <Resume />}
+      {currentSelection === "portfolio" && <Portfolio />}
     </div>
   );
 }

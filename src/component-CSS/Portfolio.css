@@ -1,0 +1,95 @@
+#Portfolio-Section {
+    width: 1200px;
+}
+
+#Portfolio-Selection {
+    padding: 60px 60px;
+    text-align: end;
+}
+
+#Portfolio-Selection li {
+    list-style-type: none;
+}
+
+#Portfolio-Selection button {
+    border: none;
+    background-color: transparent;
+    padding: 0px 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: gray;
+}
+
+#image-selection {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+    display: flex;
+}
+
+.image {
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the entire container */
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    width: 100%; /* Matches the width of the .image */
+    height: 100%; /* Matches the height of the .image */
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6); /* Use rgba for the correct transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.content:hover {
+    opacity: 3;
+    border-radius: 30px;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+
+.content>#image-selection {
+    transform: translateY(25px);
+    transition: transform 0.6s ease-in-out;
+    /* Added easing function for smoother transition */
+    -webkit-transform: translateY(25px);
+}
+
+#portfolio-Griditem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 100px;
+}

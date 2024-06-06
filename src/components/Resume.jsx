@@ -1,8 +1,16 @@
+import React from 'react';
+import '../component-CSS/Resume.css';
+
+// Define and export the TitleConcept component
+export function TitleConcept(props) {
+  return <h2>{props.Title}</h2>;
+}
+
 export default function Resume() {
   return (
     <div>
       <section id="resume">
-        <h2>Resume</h2>
+        <TitleConcept Title ="Resume" />
       </section>
 
       <div id="background">
