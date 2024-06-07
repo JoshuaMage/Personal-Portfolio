@@ -5,9 +5,10 @@ import { TitleConcept } from "../Resume.jsx";
 import PortfolioAll from "./PortfolioAll.jsx";
 import PortfolioDetailed from "./PortfolioDetailed.jsx";
 import PortfolioURL from "./PortfolioURL.jsx";
+import PortfolioImage from "./PortfolioImage.jsx"
 
 export default function Portfolio() {
-  const [currentPortfolio, setCurrentPortfolio] = useState();
+  const [currentPortfolio, setCurrentPortfolio] = useState("All");
 
   const showAll = () => {
     setCurrentPortfolio("All");
@@ -21,6 +22,10 @@ export default function Portfolio() {
     setCurrentPortfolio("URL")
   }
 
+  const showImage = () => {
+    setCurrentPortfolio("IMAGE")
+  }
+
   return (
     <div id="Portfolio-Section">
       <section id="resume">
@@ -32,14 +37,15 @@ export default function Portfolio() {
           <li>
             <button onClick={() =>showAll()}>All</button>
             <button onClick={() => showDetailed()}>Detailed</button>
-            <button onClick={() => showURL()}>Direct Url</button>
-            <button>Image</button>
+            <button onClick={() => showURL()}>Github</button>
+            <button onClick={() => showImage()}>Image</button>
           </li>
         </ul>
       </div>
       {currentPortfolio === "All" && <PortfolioAll />}
       {currentPortfolio === "Detailed" && <PortfolioDetailed />}
       {currentPortfolio === "URL" && <PortfolioURL />}
+      {currentPortfolio === "IMAGE" && <PortfolioImage />}
     </div>
   );
 }

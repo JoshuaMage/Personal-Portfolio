@@ -1,6 +1,6 @@
 import Drum from "../../../assets/DrumKit.png";
 import MarivelesGrab from "../../../assets/mariveles.grab.png";
-import InvestmentCalculator from "../../../assets/InvestmentCalc..png";
+import InvestmentCalculator from "../../../assets/InvestmentCalc.png";
 import AnimeSite from "../../../assets/Anime.png";
 import tictacToe from "../../../assets/tic-tac-toe.png";
 import MagePortfolio from "../../../assets/MagePortfolio.png";

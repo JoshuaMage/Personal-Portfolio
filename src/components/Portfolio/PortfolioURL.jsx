@@ -8,12 +8,14 @@ export default function PortfolioURL() {
       <div id="image-selection">
         <div className="wrapper">
           {URL.map((concept, index) => (
+            <a href={concept.url}>
             <div className="image" key={index}>
               <img src={concept.image} alt="portfolio item" />
               <div className="content">
                 <h2>{concept.description}</h2>
               </div>
             </div>
+            </a>
           ))}
         </div>
       </div>
