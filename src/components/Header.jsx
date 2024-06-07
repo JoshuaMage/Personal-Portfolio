@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Aboutme from "./Aboutme.jsx";
 import Resume from "./Resume.jsx";
-import Portfolio from "./Portfolio.jsx";
+import Portfolio from "./Portfolio/Portfolio.jsx";
 import "../component-CSS/Header.css";
 
 function App() {
