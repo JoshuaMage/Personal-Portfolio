@@ -9,7 +9,7 @@ export default function PortfolioAll() {
   function PortfolioImage(props) {
     return (
       <div id="image-selection">
-        <div className="wrapper">   
+        <div className="wrapper">
           <div className="image">
             <img src={props.image} alt="drumkit" />
             <div className="content">
@@ -22,16 +22,18 @@ export default function PortfolioAll() {
   }
   return (
     <div>
-      <div id="portfolio-Griditem">
-        <PortfolioImage image={Drum} Title="Drum-Kit" />
-        <PortfolioImage image={MarivelesGrab} Title="Mariveles Grab" />
-        <PortfolioImage
-          image={InvestmentCalculator}
-          Title="Investment Calculator"
-        />
-        <PortfolioImage image={AnimeSite} Title="Anime" />
-        <PortfolioImage image={tictacToe} Title="Tic-Tac-Toe" />
-        <PortfolioImage image={MagePortfolio} Title="Mage Portfolio" />
+      <div>
+        <div id="portfolio-Griditem">
+          <PortfolioImage image={Drum} Title="Drum and kit" />
+          <PortfolioImage image={MarivelesGrab} Title="Mariveles Grab" />
+          <PortfolioImage
+            image={InvestmentCalculator}
+            Title="Investment Calculator"
+          />
+          <PortfolioImage image={AnimeSite} Title="Anime" />
+          <PortfolioImage image={tictacToe} Title="Tic-Tact-Toe" />
+          <PortfolioImage image={MagePortfolio} Title="Mage Portfolio" />
+        </div>
       </div>
     </div>
   );
