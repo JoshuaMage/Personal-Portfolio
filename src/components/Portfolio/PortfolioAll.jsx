@@ -1,38 +1,19 @@
-import Drum from "../../assets/DrumKit.png";
-import MarivelesGrab from "../../assets/mariveles.grab.png";
-import InvestmentCalculator from "../../assets/InvestmentCalc..png";
-import AnimeSite from "../../assets/Anime.png";
-import tictacToe from "../../assets/tic-tac-toe.png";
-import MagePortfolio from "../../assets/MagePortfolio.png";
+import { PORTFOLIO_CONCEPTS } from "../Portfolio/PortfolioSelection-CSS/Portfolio.js";
+import "../../component-CSS/Portfolio.css";
 
 export default function PortfolioAll() {
-  function PortfolioImage(props) {
-    return (
+  return (
+    <div id="portfolio-Griditem">
       <div id="image-selection">
         <div className="wrapper">
-          <div className="image">
-            <img src={props.image} alt="drumkit" />
-            <div className="content">
-              <h2>{props.Title}</h2>
+          {PORTFOLIO_CONCEPTS.map((concept, index) => (
+            <div className="image" key={index}>
+              <img src={concept.image} alt="portfolio item" />
+              <div className="content">
+                <h2>{concept.description}</h2>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div>
-      <div>
-        <div id="portfolio-Griditem">
-          <PortfolioImage image={Drum} Title="Drum and kit" />
-          <PortfolioImage image={MarivelesGrab} Title="Mariveles Grab" />
-          <PortfolioImage
-            image={InvestmentCalculator}
-            Title="Investment Calculator"
-          />
-          <PortfolioImage image={AnimeSite} Title="Anime" />
-          <PortfolioImage image={tictacToe} Title="Tic-Tact-Toe" />
-          <PortfolioImage image={MagePortfolio} Title="Mage Portfolio" />
+          ))}
         </div>
       </div>
     </div>

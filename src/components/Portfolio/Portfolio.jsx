@@ -4,6 +4,7 @@ import "../../component-CSS/Resume.css";
 import { TitleConcept } from "../Resume.jsx";
 import PortfolioAll from "./PortfolioAll.jsx";
 import PortfolioDetailed from "./PortfolioDetailed.jsx";
+import PortfolioURL from "./PortfolioURL.jsx";
 
 export default function Portfolio() {
   const [currentPortfolio, setCurrentPortfolio] = useState();
@@ -14,6 +15,10 @@ export default function Portfolio() {
 
   const showDetailed = () => {
     setCurrentPortfolio("Detailed")
+  }
+
+  const showURL = () => {
+    setCurrentPortfolio("URL")
   }
 
   return (
@@ -27,13 +32,14 @@ export default function Portfolio() {
           <li>
             <button onClick={() =>showAll()}>All</button>
             <button onClick={() => showDetailed()}>Detailed</button>
-            <button>Direct Url</button>
+            <button onClick={() => showURL()}>Direct Url</button>
             <button>Image</button>
           </li>
         </ul>
       </div>
       {currentPortfolio === "All" && <PortfolioAll />}
       {currentPortfolio === "Detailed" && <PortfolioDetailed />}
+      {currentPortfolio === "URL" && <PortfolioURL />}
     </div>
   );
 }

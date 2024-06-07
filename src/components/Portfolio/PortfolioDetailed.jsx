@@ -1,27 +1,22 @@
-import MagePortfolio from "../../assets/MagePortfolio.png";
-import MarivelesGrab from "../../assets/mariveles.grab.png";
+import { PORTFOLIO_CONCEPTS } from "../Portfolio/PortfolioSelection-CSS/Portfolio.js";
+import "../../component-CSS/Portfolio.css";
 
 export default function PortfolioDetailed() {
-  function PortfolioImage(props) {
-    return (
+  const Detailed = PORTFOLIO_CONCEPTS.slice(0, 2);
+
+  return (
+    <div id="portfolio-Griditem">
       <div id="image-selection">
         <div className="wrapper">
-          <div className="image">
-            <img src={props.image} alt="drumkit" />
-            <div className="content">
-              <h2>{props.Title}</h2>
+          {Detailed.map((concept, index) => (
+            <div className="image" key={index}>
+              <img src={concept.image} alt="portfolio item" />
+              <div className="content">
+                <h2>{concept.description}</h2>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-      </div>
-    );
-  }
-  return (
-    <div>
-      <div id="portfolio-Griditem">
-        <PortfolioImage image={MarivelesGrab} Title="Mariveles Grab" />
-
-        <PortfolioImage image={MagePortfolio} Title="Mage Portfolio" />
       </div>
     </div>
   );
