@@ -5,10 +5,12 @@ import PortfolioProject from "./PortfolioProject/PortfolioProject.jsx";
 
 export default function PortfolioDetailed() {
   const [showPortfolioProject, setShowPortfolioProject] = useState(false);
+  const [projectSet, setProjectSet] = useState("first");
   const Detailed = PORTFOLIO_CONCEPTS.slice(0, 2);
 
   const handleImageClick = (id) => {
     if (id === 1) { // Check if the first image is clicked
+      setProjectSet((prevSet) => (prevSet === "first" ? "second" : "first"));
       setShowPortfolioProject(true);
     }
   };
@@ -29,7 +31,7 @@ export default function PortfolioDetailed() {
           </div>
         </div>
       </div>
-      {showPortfolioProject && <PortfolioProject />}
+      {showPortfolioProject && <PortfolioProject projectSet={projectSet} />}
     </div>
   );
 }

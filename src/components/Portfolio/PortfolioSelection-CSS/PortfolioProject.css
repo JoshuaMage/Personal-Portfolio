@@ -1,22 +1,46 @@
 .projectCarousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .project-image {
-    display: none;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: opacity 0.5s ease-in-out; /* Optional: Add a fade transition */
-  }
-  
-  .project-image.active {
-    display: block;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 500px;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.project-image {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* Optional: Add a fade transition */
+}
+
+.project-image.active {
+  display: block;
+}
+
+#portfolio-Project {
+  margin: 0;
+  padding: 30px 100px;
+  overflow: hidden;
+}
+
+#tittle-Project1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-family: serif ;
+  color: #141E46;
+  text-shadow: 1px 4px 10px #000000;
+
+}
