@@ -1,0 +1,22 @@
+.projectCarousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out; /* Optional: Add a fade transition */
+  }
+  
+  .project-image.active {
+    display: block;
+  }
+  
