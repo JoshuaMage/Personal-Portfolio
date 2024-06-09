@@ -1,0 +1,29 @@
+#map-Address {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#map-Address button {
+    position: relative;
+    bottom: 310px;
+    left: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: grab;
+    color: blue;
+    font-weight: bold;
+
+}
+
+#map-Address button:hover {
+    text-decoration: underline;
+    cursor: grabbing;
+}
+
+.contact-item {
+    display: flex;
+    gap: 30px;
+    text-align: start;
+    align-items: center;
+    
+}

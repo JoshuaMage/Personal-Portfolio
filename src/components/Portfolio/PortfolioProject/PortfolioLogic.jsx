@@ -16,6 +16,7 @@ const SecondProject = [grab1, grab2, grab3, grab4, grab5, grab6];
 
 export default function PortfolioLogic({ projectSet }) {
   const [currentProject, setCurrentProject] = useState(0);
+
   const projects = projectSet === "first" ? FirstProject : SecondProject;
 
   useEffect(() => {

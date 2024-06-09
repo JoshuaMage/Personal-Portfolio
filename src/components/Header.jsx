@@ -2,10 +2,11 @@ import { useState } from "react";
 import Aboutme from "./Aboutme.jsx";
 import Resume from "./Resume.jsx";
 import Portfolio from "./Portfolio/Portfolio.jsx";
+import Contact from "./Contact.jsx";
 import "../component-CSS/Header.css";
 
 function App() {
-  const [currentSelection, setCurrentSelection] = useState(null);
+  const [currentSelection, setCurrentSelection] = useState("about");
 
   const showAbout = () => {
     setCurrentSelection("about");
@@ -17,6 +18,10 @@ function App() {
 
   const showPortfolio = () => {
     setCurrentSelection("portfolio");
+  };
+
+  const showContact = () => {
+    setCurrentSelection("contact");
   };
 
   return (
@@ -53,7 +58,9 @@ function App() {
               <button className="header-Button">blog</button>
             </li>
             <li>
-              <button className="header-Button">Contact</button>
+              <button className="header-Button" onClick={() => showContact()}>
+                Contact
+              </button>
             </li>
             <li>
               <button id="header-Hireme">Hire Me</button>
@@ -64,6 +71,7 @@ function App() {
       {currentSelection === "about" && <Aboutme />}
       {currentSelection === "resume" && <Resume />}
       {currentSelection === "portfolio" && <Portfolio />}
+      {currentSelection === "contact" && <Contact />}
     </div>
   );
 }

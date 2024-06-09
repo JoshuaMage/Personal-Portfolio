@@ -9,10 +9,12 @@ export default function PortfolioDetailed() {
   const Detailed = PORTFOLIO_CONCEPTS.slice(0, 2);
 
   const handleImageClick = (id) => {
-    if (id === 1) { // Check if the first image is clicked
-      setProjectSet((prevSet) => (prevSet === "first" ? "second" : "first"));
-      setShowPortfolioProject(true);
+    if (id === 1) { 
+      setProjectSet("first");
+    } else if (id === 2) {
+      setProjectSet("second");
     }
+    setShowPortfolioProject(true);
   };
 
   return (

@@ -5,8 +5,8 @@ export default function PortfolioProject({ projectSet }) {
   return (
     <div id="portfolio-Project">
       <section id="title-Project1">
-        <h2 className="title">Mage Example Project</h2>
-        <PortfolioLogic projectSet={projectSet} />
+        <h2 className="title">Example Project <br /> "click image"</h2>
+        <PortfolioLogic projectSet={projectSet} /> 
       </section>
     </div>
   );
