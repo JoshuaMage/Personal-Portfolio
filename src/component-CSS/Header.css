@@ -1,9 +1,12 @@
-#header-section {
 
-height: 100%;
-min-height: 100vh;
+
+/* Styles for header section */
+#header-section {
+    height: 100%;
+    min-height: 100vh;
 }
 
+/* Styles for header container */
 #header-Container {
     display: grid;
     grid-template-columns: 50px 1.5fr 2fr;
@@ -13,7 +16,7 @@ min-height: 100vh;
     padding: 40px 20px;
 }
 
-
+/* Styles for header title */
 h1 {
     position: relative;
     left: 10px;
@@ -24,6 +27,7 @@ h1 {
     text-align: center;
 }
 
+/* Styles for applicant name */
 #applicant-Name {
     position: relative;
     left: 20px;
@@ -34,6 +38,7 @@ h1 {
     color: #002244;
 }
 
+/* Styles for button container */
 #button-Container ul {
     display: flex;
     gap: 30px;
@@ -43,6 +48,7 @@ h1 {
     list-style-type: none;
 }
 
+/* Styles for header buttons */
 .header-Button {
     border: none;
     background-color: transparent;
@@ -59,6 +65,7 @@ h1 {
     text-decoration-color: #0070BB;
 }
 
+/* Styles for hire me button */
 #header-Hireme {
     position: relative;
     bottom: 10px;
@@ -74,6 +81,51 @@ h1 {
     background-color: #002244;
     color: white;
     box-shadow: 10px 5px 10px #002244;
-
     font-weight: bold;
+}
+
+/* Media query for screens with a max width of 600px */
+@media (max-width: 600px) {
+
+
+    #header-Container {
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+
+    #header-Container h1 {
+        background-color: #002244;
+        color: white;
+        padding: 5px 5px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    #applicant-Name {
+       display: none;
+    }
+
+    #button-Container {
+        position: relative;
+        left: 50px;
+        width: fit-content;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #button-Container ul {
+        margin: 0px 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header-Hireme {
+       position: relative;
+        top: 2px;
+    }
 }

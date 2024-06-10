@@ -55,9 +55,6 @@ function App() {
               </button>
             </li>
             <li>
-              <button className="header-Button">blog</button>
-            </li>
-            <li>
               <button className="header-Button" onClick={() => showContact()}>
                 Contact
               </button>

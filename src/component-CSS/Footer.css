@@ -1,19 +1,77 @@
 #svg {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: auto;
     background-color: #fcfcfc;
     border: 5px solid #eeeeee;
     padding: 20px 0px;
+    text-align: center;
 }
 
-#svg p {
+#footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: start;
+    padding: 0px 50px;
+}
+
+
+#footer-links h2 {
+    font-size: 30px;
+    color: #070F2B;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#links svg {
     position: relative;
-    right: 120px;
-    text-align: end;
-
+    right: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
-#svg svg {
-    padding: 0px 20px;
+#footer-links p {
+    color: gray;
+    font-size: 18px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#footer-links p:hover {
+    color: #1B1A55;
+    font-weight: bold;
+}
+
+#footer-links button {
+    color: gray;
+    font-size: 18px;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px 0px;
+}
+
+#footer-links button:hover {
+    color: #1B1A55;
+    font-weight: bold;
+}
+
+
+#footer-links a {
+    text-decoration: none;
+}
+
+#footer-links  li {
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+}
+
+
+
+.details-footer {
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    justify-content: center;
+    align-items: center;
 }

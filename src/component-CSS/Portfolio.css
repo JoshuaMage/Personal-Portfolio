@@ -95,3 +95,9 @@ img {
 #portfolio-Griditem {
     padding: 0px 100px;
 }
+
+strong {
+    font-size: 20px;
+    color: #1E0342;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
