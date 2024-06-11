@@ -23,6 +23,7 @@ export default function Resume() {
               color: "#002244",
               paddingLeft: "20px",
             }}
+            className='x'
           >
             Education
           </h2>
@@ -30,11 +31,11 @@ export default function Resume() {
             <section className="education">
               <p className="Year-Graduate">2016-2020</p>
               <section className="school-Name">
-                <h2 className="school">
+                <h3 className="school">
                   Polytechnic University of the Philippines
-                </h2>
+                </h3>
                 <h3 className="course-Year">
-                  <strong>Bachelor of Science Business Administration</strong>{" "}
+                  Bachelor of Science Business Administration
                   <br />
                   major in Human resource Manage
                 </h3>
@@ -44,7 +45,7 @@ export default function Resume() {
             <section className="education">
               <p className="Year-Graduate">2010-2014</p>
               <section className="school-Name">
-                <h2 className="school">Mariveles National Highschool</h2>
+                <h3 className="school">Mariveles National Highschool</h3>
                 <h3 className="course-Year">Secondary</h3>
               </section>
             </section>
@@ -52,7 +53,7 @@ export default function Resume() {
             <section className="education">
               <p className="Year-Graduate">2004-2010</p>
               <section className="school-Name">
-                <h2 className="school">Ipag Elementary School</h2>
+                <h3 className="school">Ipag Elementary School</h3>
                 <h3 className="course-Year">Primary</h3>
               </section>
             </section>
@@ -75,7 +76,7 @@ export default function Resume() {
             <section className="education">
               <p className="Year-Graduate">2024 - Current</p>
               <section className="school-Name">
-                <h2 className="school">Web Developer</h2>
+                <h3 className="school">Web Developer</h3>
                 <h3 className="course-Year"><ul>
                   <li>Front-End: HTML, CSS, JavaScript, JSX</li>
                   <li>Back-End: Node.js, Express.js, EJS, </li>
@@ -88,7 +89,7 @@ export default function Resume() {
             <section className="education">
               <p className="Year-Graduate">2021-2023</p>
               <section className="school-Name">
-                <h2 className="school">Material Planner</h2>
+                <h3 className="school">Material Planner</h3>
                 <h3 className="course-Year">
                   <ul>
                     <li>

@@ -118,8 +118,7 @@ export default function Contact() {
           </section>
           </div>
 
-        <section>
-          <div>
+        <section id="messege-section">      
           <textarea
               placeholder="Message"
               value={message}
@@ -133,7 +132,6 @@ export default function Contact() {
                 borderRadius: "10px"
               }}
             />
-          </div>
         </section>
         
       </div>

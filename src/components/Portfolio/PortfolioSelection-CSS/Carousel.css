@@ -20,7 +20,6 @@
   width: 100%;
   height: auto;
   max-height: 100%;
-
 }
 
 .carousel-button {
@@ -45,4 +44,15 @@
 
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  .carousel img {
+    width: 34rem;
+
+  }
+
+  .carousel-button {
+  margin: 0 20px;
+  }
 }

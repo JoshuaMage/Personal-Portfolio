@@ -1,4 +1,3 @@
-
 import "../component-CSS/Footer.css";
 
 
@@ -7,7 +6,7 @@ return (
   <div>
     <div id="footer-links">
       <div id="links">
-        <section>
+        <section id="media-links">
           <h2>Josh . </h2>
           <p>Social Media links</p>
         </section>
@@ -107,8 +106,8 @@ return (
       </div>
 
       <div>
-        <section>
-          <h2>Links</h2>
+        <section className="details-link">
+          <h2 >Links</h2>
         </section>
         <section className="details-link">
           <ul>

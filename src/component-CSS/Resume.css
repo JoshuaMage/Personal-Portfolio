@@ -16,7 +16,7 @@
     padding: 20px;
     background-color: #fcfcfc;
     border: 5px solid #eeeeee;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .school-Name {
@@ -117,5 +117,7 @@
     .course-Year {
         font-size: 12px;
     }
+
+
 
 }

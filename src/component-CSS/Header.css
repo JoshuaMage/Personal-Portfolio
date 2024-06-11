@@ -1,5 +1,3 @@
-
-
 /* Styles for header section */
 #header-section {
     height: 100%;
@@ -93,6 +91,11 @@ h1 {
         width: 600px;
     }
 
+    h1 {
+        left: -30px;
+        padding: 5px 10px;
+    }
+
     #header-Container {
         display: flex;
         align-items: center;
@@ -101,29 +104,29 @@ h1 {
     }
 
     #button-Container {
-     padding: 10px 20px;
-        
+        padding: 10px 10px;
+
     }
 
     #button-Container ul {
-        gap: 20px;
+        gap: 10px;
     }
-    
 
-    h1 {
-        padding: 5px 10px;
-    }
+
+
     #applicant-Name {
-        display: none   ;
+        display: none;
     }
 
     .header-Button {
-       position: relative;
-       top: 10px;
+        position: relative;
+        font-size: 13px;
+        top: 10px;
     }
 
-    #header-Hireme  {
+    #header-Hireme {
         position: relative;
         top: 2px;
+        padding: 7px 9px;
     }
 }
