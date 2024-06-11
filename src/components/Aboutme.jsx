@@ -13,11 +13,11 @@ export default function Aboutme() {
 
 
   return (
-    <div>
+    <div id="C:\Users\Administrator\Desktop\Personal.Portfolio\src\component-CSS\About.css">
       <div id="About-Container">
         <section >
           <h2>Web Developer</h2>
-          <p className="about-paragraph">
+          <p>
             As a dedicated and passionate web developer with 1 year of
             experience, I specialize in creating dynamic  <br /> and responsive websites
             using a range of technologies including HTML, CSS, JavaScript, and

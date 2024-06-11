@@ -75,3 +75,14 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    #footer-links {
+        padding: 0px 10px;
+    }
+
+    footer-links #links {
+        position: relative;
+        left: 10px;
+    }
+}

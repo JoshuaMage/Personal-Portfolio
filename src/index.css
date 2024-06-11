@@ -16,7 +16,20 @@ body {
     width: 1200px;
     min-height: 100vh;
     background-color: #FAFAFA;
-    overflow: auto;
+    overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%; /* Full width to enable scrolling */
+        height: 100%; /* Full height */
+    }
 
+    #app-Container {
+        width: 100%; /* Adjust width to fit the screen */
+        min-height: 100vh; /* Ensure it takes at least the full viewport height */
+        background-color: lightblue;
+        overflow-y: auto; /* Enable vertical scrolling */
+        overflow-x: hidden; /* Disable horizontal scrolling */
+    }
+  }

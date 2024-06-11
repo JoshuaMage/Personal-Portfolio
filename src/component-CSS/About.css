@@ -1,6 +1,11 @@
+#about {
+    width: 1200;
+}
+
 #About-Container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -48,36 +53,32 @@
 
 @media (max-width: 600px) {
 
-    #About-Container {
-        display: grid;
-        grid-template-columns: 1.2fr .8fr;
-        overflow: hidden;
+    #about {
+        width: 600px;
     }
 
+    #About-Container {
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    #About-Container h2 {
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    #About-Container p {
+        font-size: 15px;
+    }
 
     #About-Container img {
-        position: relative;
-        right: 0px;
         left: 0px;
         height: 250px;
         width: 250px;
     }
 
-    #About-Container h2 {
-        text-align: center;
-        font-size: 35px;
-        padding-left: 100px;
-        
-    }
-
-    #About-Container p {
-       display: none;
-    }
-
     #About-Container button {
-    position: relative;
-    top: 20px;
-    left: 180px;
+        margin: 0;
+        padding: 10px 10px;
     }
-
 }

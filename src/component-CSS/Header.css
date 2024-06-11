@@ -41,7 +41,8 @@ h1 {
 /* Styles for button container */
 #button-Container ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    text-align: center;
 }
 
 #button-Container li {
@@ -55,6 +56,8 @@ h1 {
     color: #002244;
     font-family: serif;
     font-size: 16px;
+    position: relative;
+    top: 10px;
 }
 
 .header-Button:active,
@@ -68,7 +71,6 @@ h1 {
 /* Styles for hire me button */
 #header-Hireme {
     position: relative;
-    bottom: 10px;
     font-family: serif;
     font-size: 16px;
     padding: 10px 15px;
@@ -87,45 +89,41 @@ h1 {
 /* Media query for screens with a max width of 600px */
 @media (max-width: 600px) {
 
+    body {
+        width: 600px;
+    }
 
     #header-Container {
-       display: flex;
-       width: 100%;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-    }
-
-    #header-Container h1 {
-        background-color: #002244;
-        color: white;
-        padding: 5px 5px;
-        border-radius: 50%;
-        text-align: center;
-    }
-
-    #applicant-Name {
-       display: none;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 40px 20px;
     }
 
     #button-Container {
-        position: relative;
-        left: 50px;
-        width: fit-content;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+     padding: 10px 20px;
+        
     }
 
     #button-Container ul {
-        margin: 0px 0px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        gap: 20px;
+    }
+    
+
+    h1 {
+        padding: 5px 10px;
+    }
+    #applicant-Name {
+        display: none   ;
     }
 
-    #header-Hireme {
+    .header-Button {
        position: relative;
+       top: 10px;
+    }
+
+    #header-Hireme  {
+        position: relative;
         top: 2px;
     }
 }

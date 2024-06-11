@@ -8,13 +8,13 @@ export function TitleConcept(props) {
 
 export default function Resume() {
   return (
-    <div>
+    <div id='RESUME'>
       <section id="resume">
         <TitleConcept Title ="Resume" />
       </section>
 
       <div id="background">
-        <section>
+        <section> 
           <h2
             style={{
               fontSize: "40px",
@@ -76,7 +76,12 @@ export default function Resume() {
               <p className="Year-Graduate">2024 - Current</p>
               <section className="school-Name">
                 <h2 className="school">Web Developer</h2>
-                <h3 className="course-Year">??????</h3>
+                <h3 className="course-Year"><ul>
+                  <li>Front-End: HTML, CSS, JavaScript, JSX</li>
+                  <li>Back-End: Node.js, Express.js, EJS, </li>
+                  <li>DataBases: SQL, PostgreSQL</li>
+                  <li></li>
+                  </ul></h3>
               </section>
             </section>
 

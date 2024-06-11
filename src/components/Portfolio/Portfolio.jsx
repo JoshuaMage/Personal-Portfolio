@@ -27,6 +27,7 @@ export default function Portfolio() {
   }
 
   return (
+    <div id="PORTFOLIO">
     <div id="Portfolio-Section">
       <section id="resume">
         <TitleConcept Title="Portfolio" />
@@ -46,6 +47,7 @@ export default function Portfolio() {
       {currentPortfolio === "Detailed" && <PortfolioDetailed />}
       {currentPortfolio === "URL" && <PortfolioURL />}
       {currentPortfolio === "IMAGE" && <PortfolioImage />}
+    </div>
     </div>
   );
 }

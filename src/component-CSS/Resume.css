@@ -1,6 +1,12 @@
+#RESUME {
+    width: 1200px;
+}
+
 #background {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 50px;
+
 }
 
 #resume {
@@ -10,11 +16,11 @@
     padding: 20px;
     background-color: #fcfcfc;
     border: 5px solid #eeeeee;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .school-Name {
-padding: 0px 30px;
+    padding: 0px 30px;
 }
 
 #resume h2 {
@@ -92,4 +98,24 @@ padding: 0px 30px;
     display: block;
     height: 100%;
     background-color: #284b6e;
+}
+
+
+@media (max-width: 600px) {
+    #RESUME {
+        width: 600px;
+    }
+
+    #background {
+        padding: 0px 0px;
+    }
+
+    .school {
+        font-size: 15px;
+    }
+
+    .course-Year {
+        font-size: 12px;
+    }
+
 }

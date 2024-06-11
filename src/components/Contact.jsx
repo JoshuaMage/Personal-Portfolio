@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div id="CONTACT">
       <section id="resume">
         <TitleConcept Title="Contact" />
       </section>
@@ -73,7 +73,7 @@ export default function Contact() {
             <ContactDetails key={contacts.id} {...contacts} />
           ))}
         </section>
-        <>
+        <div id="contact-Details">
           <section id="fill-Up">
             <h2>How Can I Help You?</h2>
 
@@ -116,20 +116,18 @@ export default function Contact() {
               </button>
             </form>
           </section>
-        </>
+          </div>
 
         <section>
           <div>
-            <textarea
+          <textarea
               placeholder="Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               style={{
-                position: "relative",
-                right: "70px",
                 border: "3px solid #abb8c3",
                 overflow: "hidden",
-                width: "22rem",
+                width: "21rem",
                 height: "14rem",
                 top: "20px",
                 borderRadius: "10px"
@@ -137,6 +135,7 @@ export default function Contact() {
             />
           </div>
         </section>
+        
       </div>
     </div>
   );
