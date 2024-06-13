@@ -116,24 +116,15 @@ export default function Contact() {
               </button>
             </form>
           </section>
-          </div>
+        </div>
 
-        <section id="messege-section">      
+        <section id="messege-section">
           <textarea
-              placeholder="Message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              style={{
-                border: "3px solid #abb8c3",
-                overflow: "hidden",
-                width: "21rem",
-                height: "14rem",
-                top: "20px",
-                borderRadius: "10px"
-              }}
-            />
+            placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
         </section>
-        
       </div>
     </div>
   );

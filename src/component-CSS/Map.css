@@ -52,7 +52,7 @@
     height: 20px;
     border: 3px solid #abb8c3;
     overflow: hidden;
-    padding: 5px 0;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
@@ -72,7 +72,7 @@
 }
 
 #fill-Up h2 {
-    margin: 0px;
+    margin-bottom: 30px;
     font-size: 30px;
 }
 
@@ -99,12 +99,21 @@
     color: red;
 }
 
-
+#messege-section textarea {
+    position: relative;
+    right: 80px;
+    border: 3px solid #abb8c3 ;
+    overflow: hidden;
+    width: 18rem;
+    height: 12rem;
+    top: 10px;
+    border-radius: 10px;
+}
 
 @media (max-width: 600px) {
     #CONTACT {
         width: 600px;
-        margin-bottom: 600px;
+        margin-bottom: 300px;
     }
 
     #map-Address button {
@@ -125,8 +134,17 @@
         padding: 70px 0px;
     }
 
-    #messege-section textarea {
-        width: 30rem; /* Adjust the width as needed */
+   element.style {
+    height: 5rem;
+   }
 
-    }
+   #messege-section textarea  {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+    left: 10px;
+    width: 12rem;
+    height: 9rem;
+    
+   }
 }

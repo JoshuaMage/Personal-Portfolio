@@ -3,6 +3,7 @@ import Aboutme from "./Aboutme.jsx";
 import Resume from "./Resume.jsx";
 import Portfolio from "./Portfolio/Portfolio.jsx";
 import Contact from "./Contact.jsx";
+import Hireme from "./Hireme.jsx";
 import "../component-CSS/Header.css";
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
 
   const showContact = () => {
     setCurrentSelection("contact");
+  };
+
+  const showHire = () => {
+    setCurrentSelection("hire");
   };
 
   return (
@@ -60,7 +65,9 @@ function App() {
               </button>
             </li>
             <li>
-              <button id="header-Hireme">Hire Me</button>
+              <button id="header-Hireme" onClick={() => showHire()}>
+                Hire Me
+              </button>
             </li>
           </ul>
         </section>
@@ -69,6 +76,7 @@ function App() {
       {currentSelection === "resume" && <Resume />}
       {currentSelection === "portfolio" && <Portfolio />}
       {currentSelection === "contact" && <Contact />}
+      {currentSelection === "hire" && <Hireme />}
     </div>
   );
 }
