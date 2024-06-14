@@ -9,6 +9,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 #app-Container {
@@ -21,16 +22,16 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        width: 100%; /* Full width to enable scrolling */
-        height: 100%; /* Full height */
-       
+        margin: 0;
+        padding: 0;
+     
     }
 
     #app-Container {
-        width: 100%; /* Adjust width to fit the screen */
-        min-height: 100vh; /* Ensure it takes at least the full viewport height */
-        overflow-y: auto; /* Enable vertical scrolling */
-        overflow-x: hidden; /* Disable horizontal scrolling */
-   
+        width: 100%;
+        /* Adjust width to fit the screen */
+        min-height: 100vh;
+        /* Ensure it takes at least the full viewport height */
+        overflow-y: auto;
     }
-  }
+}
